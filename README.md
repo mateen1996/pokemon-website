@@ -179,8 +179,6 @@ Tailwind CSS
 React Router
 Git
 GitHub
-GitHub Actions
-Azure
 REST API
 ```
 
