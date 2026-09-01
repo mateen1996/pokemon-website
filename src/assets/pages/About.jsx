@@ -13,8 +13,7 @@ import {
 export const About = () => {
   return (
     <>
-      <NabarHeader />
-
+    
       {/* ================= COMING SOON ================= */}
       <section className="relative flex min-h-[600px] items-center justify-center overflow-hidden bg-gradient-to-br from-red-600 via-orange-500 to-yellow-400 px-4 py-16">
 
@@ -117,8 +116,6 @@ export const About = () => {
 
         </div>
       </section>
-
-      <Footer />
     </>
   );
 };

@@ -10,7 +10,8 @@ export const Footer = () => {
     const latestYear = new Date();
     const newYear = latestYear.getFullYear();
     const developerName = "Matin Shaikh"
-return ( <footer className="bg-slate-950 px-4 py-10 text-white"> <div className="mx-auto max-w-7xl">
+return ( 
+<footer className="bg-slate-950 px-4 py-10 text-white"> <div className="mx-auto max-w-7xl">
 
     {/* ================= FOOTER CONTENT ================= */}
     <div className="grid gap-10 md:grid-cols-3">

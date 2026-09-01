@@ -13,9 +13,6 @@ export const Pokemonpage = ({
   return (
     <div className="min-h-screen bg-slate-100 text-slate-900">
 
-      {/* Navbar */}
-      <NabarHeader />
-
       {/* Pokemon Cards */}
       <PokemonGrid
         pokemon={pokemon}
@@ -24,13 +21,6 @@ export const Pokemonpage = ({
         error={error}
         fetchPokemon={fetchPokemon}
       />
-
-      {/* Footer */}
-      <Footer />
-
-      {/* Scroll To Top */}
-      <ScrollToTop />
-
     </div>
   );
 };

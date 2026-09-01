@@ -7,6 +7,7 @@ import { Pokemonpage } from "./assets/pages/Pokemonpage";
 import { About } from "./assets/pages/About";
 import { Type } from "./assets/pages/Type";
 import { PokemonDetails } from "./assets/pages/PokemonDetails";
+import { MainLayout } from "./assets/Layout/MainLayout";
 
 function App() {
   const api = "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0";
@@ -61,9 +62,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* ================= HOME ================= */}
-        <Route
-          path="/"
-          element={
+        <Route path="/" element={<MainLayout />}>
+        <Route index element={
             <Home
               pokemon={pokemon}
               setPokemon={setPokemon}
@@ -94,7 +94,7 @@ function App() {
         {/* ================= ABOUT ================= */}
         <Route path="/about" element={<About />} />
         <Route path="/pokdetails/:pokemonID" element={<PokemonDetails />} />
-        
+        </Route>
       </Routes>
     </BrowserRouter>
   );
