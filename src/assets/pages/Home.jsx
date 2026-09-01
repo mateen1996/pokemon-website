@@ -1,0 +1,40 @@
+import { NabarHeader } from "../components/Navbar";
+import { HeroBanner } from "../components/Hero";
+import { Footer } from "../components/Footer";
+import { PokemonGrid } from "../components/PokemonGrid";
+import { ScrollToTop } from "../components/ScrollToTop";
+
+export const Home = ({
+  pokemon,
+  setPokemon,
+  loading,
+  error,
+  fetchPokemon,
+}) => {
+  return (
+    <div className="min-h-screen bg-slate-100 text-slate-900">
+
+      {/* Navbar */}
+      <NabarHeader />
+
+      {/* Hero */}
+      <HeroBanner />
+
+      {/* Pokemon Cards */}
+      <PokemonGrid
+        pokemon={pokemon}
+        setPokemon={setPokemon}
+        loading={loading}
+        error={error}
+        fetchPokemon={fetchPokemon}
+      />
+
+      {/* Footer */}
+      <Footer />
+
+      {/* Scroll To Top */}
+      <ScrollToTop />
+
+    </div>
+  );
+};
