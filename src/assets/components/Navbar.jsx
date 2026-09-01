@@ -46,17 +46,14 @@ export const NabarHeader = () => {
             <NavLink to="/" className={navLinkClass}>
               Home
             </NavLink>
-
-            <NavLink to="/pokemon" className={navLinkClass}>
-              Pokémon
-            </NavLink>
-
-            <NavLink to="/type" className={navLinkClass}>
-              Types
-            </NavLink>
-
             <NavLink to="/about" className={navLinkClass}>
               About
+            </NavLink>
+             <NavLink to="/type" className={navLinkClass}>
+              Types
+            </NavLink>
+            <NavLink to="/pokemon" className={navLinkClass}>
+              Pokémon
             </NavLink>
           </nav>
 
